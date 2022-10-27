@@ -1,7 +1,11 @@
 sh = input("Enter Hours: ")
 sr = input("Enter Rate: ")
-fh = float(sh)
-fr = float(sr)
+Try:
+    fh = float(sh)
+    fr = float(sr)
+Except :
+    print("Error, please enter numeric input")
+    quit()
 #print(fh, fr)
 if fh > 40 :
    reg = fr * fh
